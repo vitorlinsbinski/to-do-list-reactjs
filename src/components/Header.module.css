@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  background-color: var(--gray-700);
+  height: 20rem;
+  padding-top: 7.2rem;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header .logo img {
+  margin-right: 1.2rem;
+  animation: fadeIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.header .logo h1 {
+  font-size: 4rem;
+  color: var(--blue);
+  font-weight: 800;
+  animation: fadeInRight 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.header .logo h1 span {
+  color: var(--purple-dark);
+  animation: fadeIn 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.header form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.3rem;
+}
+
+.header form .inputArea {
+  width: 100%;
+  height: 5.4rem;
+  padding: 1.6rem;
+  background-color: var(--gray-500);
+  border: 0;
+  border-radius: 8px;
+  margin-right: 0.8rem;
+  color: var(--gray-100);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.header form .inputArea:focus {
+  outline: 1px solid var(--purple-dark);
+}
+
+.header form .createTaskButton {
+  padding: 1.6rem;
+  height: 5.2rem;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  transition: all 0.3s;
+}
+
+.header form .createTaskButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.header form .createTaskButton:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.header form .createTaskButton svg {
+  margin-left: 0.8rem;
+  color: var(--gray-100);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 3.2rem;
+    height: 16rem;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

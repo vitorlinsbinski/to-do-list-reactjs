@@ -1,4 +1,4 @@
-# To Do List in ReactJS with TypeScript
+# To Do List 
 
 ## About
 -This is a project to practice ReactJS using TypeScript.

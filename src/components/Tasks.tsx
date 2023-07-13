@@ -19,8 +19,6 @@ export function Tasks({
   finishedQuantity,
   onFinishedTaskClick,
 }: TasksProps) {
-  console.log(tasks);
-
   return (
     <section className={styles.tasksSection}>
       <div className="container">

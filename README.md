@@ -18,3 +18,5 @@
 - Delete a task
 
 [Live view](https://vitorlinsbinski.github.io/to-do-list-reactjs/)
+
+<img src = "./src/assets/screenshot-to-do-list.png"></img>

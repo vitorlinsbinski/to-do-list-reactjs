@@ -16,3 +16,5 @@
 - Create a new task
 - Make task complete
 - Delete a task
+
+[Live view](https://vitorlinsbinski.github.io/to-do-list-reactjs/)

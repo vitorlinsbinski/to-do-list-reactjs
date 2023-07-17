@@ -1,6 +1,7 @@
 import styles from "./Tasks.module.css";
 import { Task } from "./Task";
 import { Counter } from "./Counter";
+import { NoTasksStatus } from "./NoTasksStatus";
 
 import { TaskType } from "../App";
 
@@ -36,16 +37,20 @@ export function Tasks({
         </header>
 
         <div className={styles.tasks}>
-          {tasks.map((task) => {
-            return (
-              <Task
-                key={task.id}
-                task={task}
-                onDeleteTask={onDeleteTask}
-                onFinishedTaskClick={onFinishedTaskClick}
-              ></Task>
-            );
-          })}
+          {tasks.length === 0 ? (
+            <NoTasksStatus></NoTasksStatus>
+          ) : (
+            tasks.map((task) => {
+              return (
+                <Task
+                  key={task.id}
+                  task={task}
+                  onDeleteTask={onDeleteTask}
+                  onFinishedTaskClick={onFinishedTaskClick}
+                ></Task>
+              );
+            })
+          )}
         </div>
       </div>
     </section>
